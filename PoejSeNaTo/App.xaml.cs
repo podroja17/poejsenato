@@ -1,4 +1,5 @@
 ﻿using System;
+using PoejSeNaTo.Model;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,7 +10,7 @@ namespace PoejSeNaTo
         public App()
         {
             InitializeComponent();
-
+            Notes.Init("db.sqlite");
             MainPage = new MainPage();
         }
 
